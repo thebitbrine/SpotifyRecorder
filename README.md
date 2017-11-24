@@ -38,3 +38,10 @@
  
 #### Disclaimer:
  This software is for "educational" purposes only. No responsibility is held or accepted for misuse.
+ 
+#### Donations:
+> BTC: 1DDaiFgk3ReyK8nhXREVpF42tCbjkB3nWe
+
+> ETH: 0xd5048876067cdeec173ea6e94c482c1575babfd1
+
+> ZEC: t1h8SaL14xtrcEJaUbyGYYcj2RnjbBnMR7s
