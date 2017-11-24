@@ -31,3 +31,6 @@
  1. Random crashes due to "Garbage Collection" and LAMP library low-level issues.
  1. Spofity's API not respecting the API calls. (Can be solved by restarting the Spotify Client)
  1. No-Brake. It just goes on and on overwriting the previously recorded files.
+ 
+ #### Disclaimer:
+ > “This software is for educational purposes only. No responsibility is held or accepted for misuse.”
