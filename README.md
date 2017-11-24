@@ -33,4 +33,4 @@
  1. No-Brake. It just goes on and on overwriting the previously recorded files.
  
  #### Disclaimer:
- > “This software is for educational purposes only. No responsibility is held or accepted for misuse.”
+ This software is for "educational" purposes only. No responsibility is held or accepted for misuse.
