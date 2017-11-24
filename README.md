@@ -29,12 +29,12 @@
  * Patience (All because it's a new born software and might crash if not used carefully)
  
  
- #### Known Issues:
- 1. Artwork bitmap being used somewhere else. (UI Artwork updates messes with tagging function)
- 1. Random crashes due to "Garbage Collection" and LAMP library low-level issues.
- 1. Spofity's API not respecting the API calls. (Can be solved by restarting the Spotify Client)
- 1. No-Brake. It just goes on and on overwriting the previously recorded files.
+#### Known Issues:
+ * Artwork bitmap being used somewhere else. (UI Artwork updates messes with tagging function)
+ * Random crashes due to "Garbage Collection" and LAMP library low-level issues.
+ * Spofity's API not respecting the API calls. (Can be solved by restarting the Spotify Client)
+ * No-Brake. It just goes on and on overwriting the previously recorded files.
  
  
- #### Disclaimer:
+#### Disclaimer:
  This software is for "educational" purposes only. No responsibility is held or accepted for misuse.
