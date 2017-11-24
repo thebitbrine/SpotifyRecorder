@@ -1,7 +1,10 @@
 # TheBitBrine's Spotify Recorder
 ### A Tiny Tool That Records Songs From Spotify In MP3 And Tags Them.
 
-### How does it work?
+#### Screenshot:
+![TheBitBrine's Spotify Recorder Screenshot](https://i.imgur.com/SriLhy3.png)
+
+#### How does it work?
 > 1. It connects to Spotify Player's local API to grab the required info for the song (title, album, artwork etc.)
 >
 > 2. Then it takes control of the playback and goes to the next song and then comes back to the same song that you originally wanted to record, (It does this to set the song's playback position to zero, and as the local API does not provide any proper way to do this, it's the only way to make sure that everything gets recorded)
@@ -15,7 +18,7 @@
 > 6. Repeat (If Playlist Mode is turned on)
 
 
-### Requirements:
+#### Requirements:
  * .NET Framework 4.6.1 (The only version with required GC controls)
  * Spotify For Windows
  * Spotify Ad Blocker
@@ -23,7 +26,7 @@
  * All Notification Sounds To Be Turned Off (Like Windows Sounds, Skype, Telegram etc.)
  * Patience (All because it's a new born software and might crash if not used carefully)
  
- ### Known Issues:
+ #### Known Issues:
  1. Artwork bitmap being used somewhere else. (UI Artwork updates messes with tagging function)
  1. Random crashes due to "Garbage Collection" and LAMP library low-level issues.
  1. Spofity's API not respecting the API calls. (Can be solved by restarting the Spotify Client)
