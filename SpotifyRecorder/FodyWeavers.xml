@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Weavers>
+  <Costura DisableCleanup='true' />
+
+  <Costura>
+    <IncludeAssemblies>
+      MaterialSkin
+      NAudio
+      NAudio.Lame
+      Newtonsoft.Json
+      policy.2.0.taglib-sharp
+      SpotifyAPI
+      taglib-sharp
+    </IncludeAssemblies>
+
+    <Unmanaged32Assemblies>
+      libmp3lame.32
+    </Unmanaged32Assemblies>
+    <Unmanaged64Assemblies>
+      libmp3lame.64
+    </Unmanaged64Assemblies>
+
+
+    <PreloadOrder>
+      libmp3lame.32
+      libmp3lame.64
+    </PreloadOrder>
+
+  </Costura>
+</Weavers>
