@@ -63,6 +63,16 @@ namespace SpotifyRecorder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GitHubLogo {
+            get {
+                object obj = ResourceManager.GetObject("GitHubLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vinyl {
             get {
                 object obj = ResourceManager.GetObject("vinyl", resourceCulture);

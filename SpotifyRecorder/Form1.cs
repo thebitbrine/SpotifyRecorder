@@ -21,10 +21,12 @@ using TagLib;
 using System.Drawing.Imaging;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using MaterialSkin.Controls;
+using MaterialSkin;
 
 namespace SpotifyRecorder
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialForm
     {
         public static LameMP3FileWriter Writer;
         public static IWaveIn waveIn;
@@ -61,6 +63,13 @@ namespace SpotifyRecorder
         public Form1()
         {
             InitializeComponent();
+
+            //Initializing Material Skin Colorscheme
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+
             FetchNameFromTitle();
             FireUpTheLocalAPI();
             FetchTrackInfo();
@@ -77,8 +86,10 @@ namespace SpotifyRecorder
             catch
             { /*Doesn't Matter*/}
         }
-        
-        private void GitHubRepLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+
+
+
+        private void GitHubLink_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/thebitbrine/spotify-recorder");
         }
@@ -87,17 +98,20 @@ namespace SpotifyRecorder
         {
             FireUpTheLocalAPI();
 
-            if (Status.Volume < 1)
-            {
-                MessageBox.Show("Please set your Spotify Player's volume to 100% for the best results.", "Low Volume", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            
             if (RecordPressed == false)
             {
+                //Notify the user about low volume on Spotify Client
+                if (Status.Volume < 1)
+                {
+                    MessageBox.Show("Please set your Spotify Player's volume to 100% for the best results.", "Low Volume", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
                 //Start Recording (Threaded)
                 if (string.IsNullOrWhiteSpace(ExportFolder) == true)
                 {
-                    folderBrowserDialog1.ShowDialog();
-                    ExportFolder = folderBrowserDialog1.SelectedPath;
+                    ExportLocationBrowse.ShowDialog();
+                    ExportFolder = ExportLocationBrowse.SelectedPath;
                 }
                 if (string.IsNullOrWhiteSpace(ExportFolder) == false)
                 {
@@ -364,6 +378,6 @@ namespace SpotifyRecorder
             }
         }
         #endregion
-        
+
     }
 }
