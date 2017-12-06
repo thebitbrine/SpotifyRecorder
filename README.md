@@ -1,9 +1,9 @@
-# TheBitBrine's Spotify Recorder
+# TheBitBrine's Spotify Recorder v0.2
 ### A Tiny Tool That Records Songs From Spotify In MP3 And Tags Them.
 
 
 #### Screenshot:
-![TheBitBrine's Spotify Recorder Screenshot](https://i.imgur.com/SriLhy3.png)
+![TheBitBrine's Spotify Recorder Screenshot](https://i.imgur.com/Ky3dPz1.png)
 
 
 #### How does it work?
